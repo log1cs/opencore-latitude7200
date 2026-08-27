@@ -1970,25 +1970,23 @@
 			<key>AdviseFeatures</key>
 			<false/>
 			<key>MLB</key>
-			<string>M0000000000000001</string>
+			<string>C02002108QX0000A8</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data>
-			ESIzRFVm
-			</data>
+			<data>QDMauKDj</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
 			<key>SystemProductName</key>
-			<string>iMac19,1</string>
+			<string>MacBookPro16,3</string>
 			<key>SystemSerialNumber</key>
-			<string>W00000000001</string>
+			<string>C02C35YVP3XY</string>
 			<key>SystemUUID</key>
-			<string>00000000-0000-0000-0000-000000000000</string>
+			<string>602CA3F6-FB35-486E-BC0E-6541A72DAD89</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
