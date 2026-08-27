@@ -7,44 +7,92 @@
 		<key>Add</key>
 		<array>
 			<dict>
-				<key>Comment</key>
-				<string>Read the comment in dsl sample</string>
+				<key>Path</key>
+				<string>SSDT-AC.aml</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
+				<key>Comment</key>
+				<string>AC Adapter Wake Fix</string>
+			</dict>
+			<dict>
+				<key>Path</key>
+				<string>SSDT-ACOS.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Comment</key>
+				<string>Dell Windows 10 OS Hook</string>
+			</dict>
+			<dict>
+				<key>Path</key>
+				<string>SSDT-ALSD.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Comment</key>
+				<string>Ambient Light Sensor</string>
+			</dict>
+			<dict>
+				<key>Path</key>
+				<string>SSDT-AWAC.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Comment</key>
+				<string>AWAC / RTC Fix (with HPTE=1)</string>
+			</dict>
+			<dict>
+				<key>Path</key>
+				<string>SSDT-EC-USBX.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Comment</key>
+				<string>Dell Embedded Controller &amp; USB Power</string>
+			</dict>
+			<dict>
+				<key>Path</key>
+				<string>SSDT-LPCB.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Comment</key>
+				<string>Legacy Devices (DMAC/FWHD)</string>
+			</dict>
+			<dict>
+				<key>Path</key>
+				<string>SSDT-MCHC.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Comment</key>
+				<string>Memory Controller Hub</string>
+			</dict>
+			<dict>
 				<key>Path</key>
 				<string>SSDT-PLUG.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Comment</key>
+				<string>CPU Power Management (_SB.PR00)</string>
 			</dict>
 			<dict>
-				<key>Comment</key>
-				<string>Read the comment in dsl sample</string>
-				<key>Enabled</key>
-				<false/>
 				<key>Path</key>
 				<string>SSDT-PNLF.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-AWAC.aml</string>
 				<key>Enabled</key>
 				<true/>
-				<key>Path</key>
-				<string>SSDT-AWAC.aml</string>
+				<key>Comment</key>
+				<string>Display Backlight Control</string>
 			</dict>
 			<dict>
-				<key>Comment</key>
-				<string>SSDT-EC-USBX-LAPTOP.aml</string>
+				<key>Path</key>
+				<string>SSDT-TB3HP.aml</string>
 				<key>Enabled</key>
 				<true/>
-				<key>Path</key>
-				<string>SSDT-EC-USBX-LAPTOP.aml</string>
+				<key>Comment</key>
+				<string>Thunderbolt 3 HotPlug (RP05)</string>
 			</dict>
 			<dict>
-				<key>Comment</key>
-				<string>SSDT-XOSI.aml</string>
+				<key>Path</key>
+				<string>SSDT-USBP.aml</string>
 				<key>Enabled</key>
 				<true/>
-				<key>Path</key>
-				<string>SSDT-XOSI.aml</string>
+				<key>Comment</key>
+				<string>Latitude 7200/7210 USB Mapping</string>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -87,123 +135,7 @@
 			</dict>
 		</array>
 		<key>Patch</key>
-		<array>
-			<dict>
-				<key>Base</key>
-				<string></string>
-				<key>BaseSkip</key>
-				<integer>0</integer>
-				<key>Comment</key>
-				<string>Replace one byte sequence with another</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				ESIzRA==
-				</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data>
-				</data>
-				<key>OemTableId</key>
-				<data>
-				</data>
-				<key>Replace</key>
-				<data>
-				RDMiEQ==
-				</data>
-				<key>ReplaceMask</key>
-				<data>
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>
-				</data>
-			</dict>
-			<dict>
-				<key>Base</key>
-				<string>\_SB.PCI0.LPCB.HPET</string>
-				<key>BaseSkip</key>
-				<integer>0</integer>
-				<key>Comment</key>
-				<string>HPET _CRS to XCRS</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Enabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				X0NSUw==
-				</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data>
-				</data>
-				<key>OemTableId</key>
-				<data>
-				</data>
-				<key>Replace</key>
-				<data>
-				WENSUw==
-				</data>
-				<key>ReplaceMask</key>
-				<data>
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>
-				</data>
-			</dict>
-			<dict>
-				<key>Base</key>
-				<string></string>
-				<key>BaseSkip</key>
-				<integer>0</integer>
-				<key>Comment</key>
-				<string>RTC 0x70,1,8 to 0x70,1,2</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Enabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				AXAAcAABCA==
-				</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data>
-				</data>
-				<key>OemTableId</key>
-				<data>
-				</data>
-				<key>Replace</key>
-				<data>
-				AXAAcAABAg==
-				</data>
-				<key>ReplaceMask</key>
-				<data>
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>
-				RFNEVA==
-				</data>
-			</dict>
-		</array>
+		<array/>
 		<key>Quirks</key>
 		<dict>
 			<key>FadtEnableReset</key>
@@ -215,7 +147,7 @@
 			<key>ResetHwSig</key>
 			<false/>
 			<key>ResetLogoStatus</key>
-			<true/>
+			<false/>
 			<key>SyncTableIds</key>
 			<false/>
 		</dict>
@@ -1976,7 +1908,9 @@
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data>QDMauKDj</data>
+			<data>
+			QDMauKDj
+			</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
