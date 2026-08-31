@@ -886,7 +886,7 @@
 				<key>Comment</key>
 				<string>AirPortBrcmNIC.kext</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AirPortBrcmNIC</string>
 				<key>MaxKernel</key>
